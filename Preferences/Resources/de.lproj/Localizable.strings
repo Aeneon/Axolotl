@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AXApplyLabel</key>
+	<string>Neue WhatsApp-Version anwenden ?</string>
+	<key>AXApplyNo</key>
+	<string>Nein</string>
+	<key>AXApplyYes</key>
+	<string>Ja</string>
+	<key>AXSocialSourceSubTitle</key>
+	<string>GitHub</string>
+	<key>AXSocialSourceTitle</key>
+	<string>Quellcode</string>
+</dict>
+</plist>

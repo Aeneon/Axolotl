@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AXTintColors</key>
+	<dict>
+		<key>AXApplyButton</key>
+		<string>#44c054:1.0</string>
+		<key>AXApplyNo</key>
+		<string>#44c054:1.0</string>
+		<key>AXApplyYes</key>
+		<string>#c04454:1.0</string>
+		<key>AXDebugSwitch</key>
+		<string>#44c054:1.0</string>
+		<key>AXEnableSwitch</key>
+		<string>#44c054:1.0</string>
+		<key>AXNavigationBar</key>
+		<string>#3fd163:1.0</string>
+		<key>AXTwitterButton</key>
+		<string>#0098c0:1.0</string>
+		<key>AXWebsiteButton</key>
+		<string>#727373:1.0</string>
+	</dict>
+</dict>
+</plist>
