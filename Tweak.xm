@@ -18,11 +18,15 @@ NSDictionary *preferences;
 	Variables …
 */
 BOOL enabled;
+BOOL debugLogging;
+
+int newVersionMajor;
+int newVersionMinor;
+int newVersionBuild;
+int newVersionRevision;
 
 NSString *newVersion;
 NSString *newBuildHash;
-
-BOOL debugLogging;
 
 static NSDate * (*_orig_WAAppExpirationDate)();
 static NSDate * (*_orig_WABuildDate)();
@@ -142,22 +146,22 @@ static NSString *_new_WABuildHash()
 
 		- (void)setPrimary: (int)i
 		{
-			%orig(2);
+			%orig(newVersionMajor);
 		}
 
 		- (void)setSecondary: (int)i
 		{
-			%orig(99);
+			%orig(newVersionMinor);
 		}
 
 		- (void)setTertiary: (int)i
 		{
-			%orig(21);
+			%orig(newVersionBuild);
 		}
 
 		- (void)setQuaternary: (int)i
 		{
-			%orig(0);
+			%orig(newVersionRevision);
 		}
 
 	%end
@@ -229,7 +233,7 @@ static NSString *_new_WABuildHash()
 
 		// Check, if the Version is valid …
 
-		NSPredicate *isValidVersion = [NSPredicate predicateWithFormat: @"SELF MATCHES %@", @"^\\d*(\\.\\d*){2,3}$"];
+		NSPredicate *isValidVersion = [NSPredicate predicateWithFormat: @"SELF MATCHES %@", @"^\\d+(\\.\\d+){2,3}$"];
 
 		// … and if not, use our Default Version.
 
@@ -237,6 +241,17 @@ static NSString *_new_WABuildHash()
 		{
 			newVersion = DEFAULT_VERSION;
 		}
+
+		// Separate the Version by it's Point and get the Components …
+
+		NSArray *components = [newVersion componentsSeparatedByString: @"."];
+
+		// … and set the Variables.
+
+		newVersionMajor = [components[0] intValue];
+		newVersionMinor = [components[1] intValue];
+		newVersionBuild = [components[2] intValue];
+		newVersionRevision = ([components count] > 3) ? [components[3] intValue] : 0;
 
 		// Initialize the Tweak …
 
