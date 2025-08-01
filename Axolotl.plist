@@ -1,0 +1,12 @@
+{
+    Filter =     {
+        Bundles =         (
+            "net.whatsapp.WhatsApp",
+            "net.whatsapp.WhatsApp.NotificationExtension",
+            "net.whatsapp.WhatsApp.ServiceExtension",
+            "net.whatsapp.WhatsAppSMB",
+            "net.whatsapp.WhatsAppSMB.NotificationExtension",
+            "net.whatsapp.WhatsAppSMB.ServiceExtension"
+        );
+    };
+}

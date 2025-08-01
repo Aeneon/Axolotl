@@ -1,0 +1,12 @@
+#!/bin/bash
+
+echo "===================================="
+echo "Killing all WhatsApp-Instances ..."
+
+/usr/bin/killall -9 WhatsApp &> /dev/null
+
+echo "Killing Preferences ..."
+
+/usr/bin/killall -9 Preferences &> /dev/null
+
+echo "===================================="

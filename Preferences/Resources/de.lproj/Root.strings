@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AXDebugFooter</key>
+	<string>Statusmeldungen mittels NSLog protokollieren.</string>
+	<key>AXDebugLabel</key>
+	<string>Debug-Protokollierung aktivieren …</string>
+	<key>AXDebugSwitch</key>
+	<string>Protokollierung aktivieren</string>
+	<key>AXEnableLabel</key>
+	<string>Tweak aktivieren</string>
+	<key>AXEnableSwitch</key>
+	<string>Axolotl aktivieren</string>
+	<key>AXSocialLabel</key>
+	<string>Soziale Netze</string>
+	<key>AXVersionFooter</key>
+	<string>Lege eine neue Version für WhatsApp fest. Der Build-Hash ( ein MD5-Hash ) wird automatisch beim nächsten Start berechnet, nachdem du die Änderungen angewandt hast …
+
+Bitte beachte, dass WhatsApp hierfür geschlossen wird. Nicht gesendete Nachrichten können dabei verloren gehen.</string>
+	<key>AXVersionLabel</key>
+	<string>Version ersetzen …</string>
+</dict>
+</plist>
